@@ -50,7 +50,7 @@ pipeline{
          }  
          success {   
             echo "========Deploying executed successfully========"
-            emailext attachLog: true, body: 'BUILD EMAIL MESSAGE', subject: 'Build Email log Trigger Message', to: 'mukeshkousalya@2k17@gmail.com'
+            emailext attachLog: true, body: 'BUILD EMAIL MESSAGE', subject: 'Build Email log Trigger Message', to: 'mukeshkousalya2k17@gmail.com'
          }  
          failure {  
              mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'mukeshkousalya2k17@gmail.com', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "mukeshkousalya2k17@gmail.com";  
