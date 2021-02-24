@@ -26,7 +26,7 @@ pipeline{
         stage("build & SonarQube analysis") {
             agent any
             steps {
-              withSonarQubeEnv('sonarqube') {
+              withSonarQubeEnv('SonarPassport') {
                 sh 'mvn verify sonar:sonar'
               }
             }
