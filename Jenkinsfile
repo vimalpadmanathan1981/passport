@@ -27,7 +27,7 @@ pipeline{
             }
         }
     
-     stage('Deploy to artifactory'){
+      /* stage('Deploy to artifactory'){
         steps{
         rtUpload(
          serverId : 'ARTIFACTORY_SERVER',
@@ -42,7 +42,7 @@ pipeline{
          
       )
       }
-     }
+     } */
   }
         post {  
          always {  
